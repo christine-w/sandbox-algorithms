@@ -113,12 +113,7 @@ function compareStringNumbers(str1, str2, debug) {
 		debug && console.log('different signs');
 		return str1Sign;
 	}
-	
-	var positiveNumbers = isPositiveIntString(str1);
-	var numStr1 = str1.substring(Number(str1Sign < 0));
-	var numStr2 = str2.substring(Number(str1Sign < 0));
-	debug && console.log('same signs -- isPositive: ' + positiveNumbers + '; sign stripped -- numStr1: ' + numStr1 + ' numStr2: ' + numStr2);
-	
+
 	if (str1.length > str2.length) {
 		debug && console.log('same sign: ' + str1Sign + ' str1 longer');
 		return str1Sign;
