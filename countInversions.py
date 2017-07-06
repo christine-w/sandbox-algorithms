@@ -47,3 +47,16 @@ def countInversions(arr):
     
 #print(countInversions([3,2,1]))
 #print(countInversions([1,3,5,2,4,6]))
+
+# Algorithms Week 2 Assignment
+# Attempt 1: 2397819672 (Issue: array of strings had to be converted to array of ints first)
+# Attempt 2: 2407905288 CORRECT Answer
+with open('TestData-CountInversions.txt') as f:
+    data = f.read()
+
+strArray = data.strip().split('\n')
+intArray = [int(numStr) for numStr in strArray]
+
+count, sortedArray = (countInversions(intArray))
+print(str(count))
+#print(sortedArray)
